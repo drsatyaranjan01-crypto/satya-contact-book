@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Premium Contact Book</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📒 Premium Contact Book</h1>
+
+    <p class="subtitle">
+        Save and manage your contacts easily
+    </p>
+
+    <div class="contact-form">
+
+        <input
+        type="text"
+        id="name"
+        placeholder="Contact Name">
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Email Address">
+
+        <input
+        type="tel"
+        id="phone"
+        placeholder="Phone Number">
+
+        <button onclick="addContact()">
+            ➕ Add Contact
+        </button>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search Contact..."
+        onkeyup="searchContacts()">
+
+    </div>
+
+    <div id="contactCount"
+    class="contact-count">
+
+        📞 Total Contacts: 0
+
+    </div>
+
+    <div id="contactList">
+
+    </div>
+
+    <footer>
+
+        Built with ❤️ by
+        <span>Satya Ranjan</span>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
